@@ -12,7 +12,7 @@ export async function connectToMongo(){
     }
 }
 
-export const db = client.db('riddle_project')
+export const db = client.db('complains-project')
 
 
 

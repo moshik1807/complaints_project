@@ -11,7 +11,6 @@ export async function connectToMongo(){
         console.log(error)
     }
 }
-
 export const db = client.db('complains-project')
 
 

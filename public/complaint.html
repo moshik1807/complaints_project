@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Sending an anonymous complaint</h1>
+    </header>
+    <main>
+        <form action="/submit" method="post">
+            
+            <label for="domain">choose a category:</label>
+            <select name="domain" id="">
+                <option value="">choose</option>
+                <option value="food">food</option>
+                <option value="equipment">equipment</option>
+                <option value="commands">commands</option>
+                <option value="other">other</option>
+            </select>
+
+            <label for="complaint">complaint</label>
+            <textarea required name="message" id="complaint"></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </main>
+</body>
+</html>

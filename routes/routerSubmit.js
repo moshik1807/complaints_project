@@ -1,9 +1,11 @@
 import express from 'express';
+import {add} from '../controllers/complaintsController.js'
+
 const routerSubmit = express.Router();
 
-routerSubmit.post('/', (req, res) => {
-  const { domain, message } = req.body;
-  res.send(`<h1>Thank you for your complaint!</h1><a href="/">Back</a>`);
+routerSubmit.post('/',async (req, res) => {
+  await add(req.body)
+  res.send(`Thank you for your complaint!`);
 });
 
 export default routerSubmit;

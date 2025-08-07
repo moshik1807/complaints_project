@@ -1,0 +1,23 @@
+{
+  "name": "complains-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moshik1807/complaints_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moshik1807/complaints_project/issues"
+  },
+  "homepage": "https://github.com/moshik1807/complaints_project#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

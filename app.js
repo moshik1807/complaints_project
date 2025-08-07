@@ -2,7 +2,10 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+dotenv.config();
 import routerSubmit from './routes/routerSubmit.js'
+import routerAdmin from './routes/routerAdmin.js'
 
 
 const __filename = fileURLToPath(import.meta.url);
@@ -19,9 +22,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.post('/submit', routerSubmit);
+app.use('/submit', routerSubmit);
 
-app.post('/admin', routerAdmin);
+app.use('/admin', routerAdmin);
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
